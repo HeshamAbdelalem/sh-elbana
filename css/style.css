@@ -1,0 +1,99 @@
+:root {
+  --main-bg-color: #f9f9f9;
+  --sec-bg-color: #1b3b4f;
+}
+
+/* ***********  Start Main Styles   *********** */
+
+@font-face {
+  font-family: DroidKufi-Bold;
+  src: url(/fonts/DroidKufi-Bold.ttf);
+}
+@font-face {
+  font-family: DroidKufi-Regular;
+  src: url(/fonts/DroidKufi-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  direction: rtl;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: DroidKufi-Regular;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #f9f9f9;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+/* ***********  End Main Styles   *********** */
+
+/* ***********  START NAV Styles   *********** */
+
+nav {
+  background-color: var(--sec-bg-color);
+  border-bottom: 2px solid #b39800;
+}
+
+.nav__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.nav__logo p {
+  color: #f9f9f9;
+  font-size: 1.1rem;
+  font-family: DroidKufi-bold;
+  padding: 5px 20px;
+}
+.nav__logo img {
+  /*   min-width: 300px;
+  max-width: 500px; */
+  max-height: 130px;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__links ul {
+  text-align: center;
+}
+
+.nav__links ul li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nav__links li a {
+  display: inline-block;
+  margin: 5px 20px;
+  transition: all 0.5s ease;
+}
+
+.nav__links li:hover a {
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/* ***********  END NAV Styles   *********** */
