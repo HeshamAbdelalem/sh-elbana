@@ -14,6 +14,26 @@
   src: url(/fonts/DroidKufi-Regular.ttf);
 }
 
+@font-face {
+  font-family: Amiri-Regular;
+  src: url(/fonts/Amiri-Regular.ttf);
+}
+
+@font-face {
+  font-family: Amiri-Bold;
+  src: url(/fonts/Amiri-Bold.ttf);
+}
+
+@font-face {
+  font-family: Amiri-slanted;
+  src: url(/fonts/Amiri-Slanted.ttf);
+}
+
+@font-face {
+  font-family: Amiri-boldslanted;
+  src: url(/fonts/Amiri-BoldSlanted.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +44,8 @@ html {
 
 body {
   background-color: var(--main-bg-color);
-  font-family: DroidKufi-Regular;
+  font-family: Amiri-Regular;
+  font-size: 1.2rem;
 }
 img {
   height: auto;
@@ -46,10 +67,26 @@ a {
 /* ***********  End Main Styles   *********** */
 
 /* ***********  START NAV Styles   *********** */
-
 nav {
-  background-color: var(--sec-bg-color);
+  background: var(--sec-bg-color) url('/assets/pattern2.png') top left repeat-x;
   border-bottom: 2px solid #b39800;
+}
+
+.nav__bars {
+  /* display: inline-block; */
+  float: left;
+  color: #f9f9f9;
+  margin: 10px 20px;
+}
+
+.nav__bars i {
+  transition: all 0.5s ease;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.nav__bars:hover i {
+  transform: rotate(90deg);
 }
 
 .nav__logo {
@@ -57,18 +94,19 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .nav__logo p {
   color: #f9f9f9;
-  font-size: 1rem;
-  font-family: DroidKufi-bold;
+  font-size: 1.3rem;
+
+  font-family: Amiri-boldslanted;
   padding: 5px 20px 0px;
 }
 .nav__logo img {
-  /*   min-width: 300px;
-  max-width: 500px; */
+  min-width: 300px;
+  max-width: 500px;
   max-height: 110px;
 }
 
